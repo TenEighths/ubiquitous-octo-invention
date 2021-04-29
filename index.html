@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JQuery CDN -->
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+	<script src="script.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <h1>Dungeon Adventure</h1>
+        </div>
+
+    <div class="interface">
+        <div class="wrapper">
+            <section class='character-sheet'>
+                <form action="#" method="POST" name="character-form" class="character-form">
+                    <input type="text" id="char-name" name="char-name" placeholder="name" required>
+                    <input type="number" id="char-age" name="char-age" placeholder="age" required>
+                    <button type="submit" class="submit-btn" value='set'>Submit</button>
+                </form>
+
+                <div class="user-sheet" style="display:none">
+                    <label for="char-name">Name: <span class="char-name"></span></label>
+                    <label for="char-age">Age: <span class="char-age"></span></label>
+                    <label for="char-stamina">Stamina: <span class="char-stamina"></span></label>
+                </div>
+
+            </section>
+
+            <div class="adventure-log" style="display:none;"><p>You awaken in a dark room lit only by the dim glow of a dying fire emanating from a nearby fireplace. <br><br>
+
+                The only other distinguishing feature of the room are two doors opposite you.<br><br>
+                
+                You see a note pinned to the wall opposite you. Upon closer inspection the note reads:<br><br>
+                
+                “Thank you for choosing MazeCo Mazes for your newly commissioned dungeon. We pride ourselves on our professionalism and attention to detail. With your purchase of a MazeCo DUNGEON MAZE you can rest easy knowing that all who enter your DUNGEON MAZE will spend eternity searching for freedom, only to find endless dead ends and despair.<br><br>
+                
+                Remember in MazeCo DUNGEON MAZE’S the only way is forward, each door locks behind you as you progress, so one wrong step and you’re in here forever! As per kingdom regulations and safety standards we have included ONE (1) exit room. Please find attached a DUNGEON MAZE map designed specifically for your one of a kind DUNGEON MAZE. <br><br>
+                
+                We hope you will enjoy you DUNGEON MAZE and remember, MazeCo is here for all your labyrinth, corn, hedge, and stone maze needs.<br><br>
+                
+                Construction estimated complete in EIGHT (8) YEARS”<br><br>
+                
+                Attached to the note is a crude maze showing what looks like a series of rooms, each with two doors. The room labeled exit is shown as five rooms to the right, and three rooms to the left of your current position. <br><br>
+                
+                You think to yourself “Good thing this maze isn’t complete and they just left this map here or else I’d probably have to solve a series of clues, and puzzles, ever worried I’d run out of stamina before I was able to find my way out.”<br><br>
+                
+                Which door would you like to go through? left or right?</p>
+                
+            </div>
+            <form action="" name="user-log" class="user-log" style="display:none;">
+                <input type="text" name="user-input" id="user-input" />
+                <button type="submit" name="user-submit" id="user-submit">Submit</button>
+            </form>
+
+
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class='wrapper'>
+            <a href="https://junocollege.com/">Created at Juno College </a>
+        
+        </div>
+    </footer>
+</body>
+
+</html>
